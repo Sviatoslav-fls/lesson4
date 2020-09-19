@@ -1,44 +1,53 @@
 @font-face {
 	font-family: "Gilroy";
-	font-display: swap;
-	src: url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.woff2") format("woff2");
-	font-weight: 700;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: "Gilroy";
-	font-display: swap;
-	src: url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.woff2") format("woff2");
-	font-weight: 500;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: "Gilroy";
-	font-display: swap;
-	src: url("../fonts/Gilroy-SemiBold.woff") format("woff"), url("../fonts/Gilroy-SemiBold.woff2") format("woff2");
+	src: url("../fonts/Gilroy-SemiBold.woff2") format("woff2"), url("../fonts/Gilroy-SemiBold.woff") format("woff");
 	font-weight: 600;
 	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
 	font-family: "Gilroy";
-	font-display: swap;
-	src: url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.woff2") format("woff2");
-	font-weight: 400;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: "Gilroy";
-	font-display: swap;
-	src: url("../fonts/Gilroy-Heavy.woff") format("woff"), url("../fonts/Gilroy-Heavy.woff2") format("woff2");
+	src: url("../fonts/Gilroy-ExtraBold.woff2") format("woff2"), url("../fonts/Gilroy-ExtraBold.woff") format("woff");
 	font-weight: 800;
 	font-style: normal;
+	font-display: swap;
 }
-/* Обнуляющий стиль */
-/* *,
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Heavy.woff2") format("woff2"), url("../fonts/Gilroy-Heavy.woff") format("woff");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* Обнуляющий стиль -------------------------------------------------------------------------------------------------------------------*/
+*,
 *::before,
 *::after {
 	margin: 0;
@@ -49,6 +58,9 @@ ol li,
 ul li {
 	list-style: none;
 }
+/* a {
+	color: inherit;
+} */
 a,
 a:visited {
 	text-decoration: none;
@@ -73,12 +85,303 @@ body {
 	font-size: 14px;
 	font-family: "Gilroy";
 	line-height: 1;
-} */
-/*-------------------------*/
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
 
+.header {
+}
 .header__logo {
+}
+.header__menu {
+}
+.menu {
+}
+.menu__item {
+	text-align: center;
+	word-spacing: 30px;
+}
+.menu__link {
+	font-family: Mali;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 50px;
+	text-transform: uppercase;
+	color: rgb(158, 207, 215);
+	text-shadow: 1px 1px 1px #0000ff;
+}
+.menu__link.ready {
+	text-shadow: 2px 2px 2px #008000;
+}
+/* --/header---------------------------------------------------------------------------------------------------------------------- */
+.duotone {
+}
+.duotone__kites {
+}
+.kites {
+}
+.kites__image {
+}
+.kites__title {
+	font-weight: 800;
+	font-size: 36px;
+	line-height: 70px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #802bb1;
+	text-shadow: 3px 3px 5px rgba(128, 43, 177, 0.6), 5px 5px 7px rgba(243, 17, 17, 0.4);
+	text-decoration: overline;
+}
+.kites__subtitle {
+	font-weight: 600;
+	font-size: 28px;
+	text-align: center;
+	text-transform: lowercase;
+	color: rgba(49, 117, 114, 0.6);
+	text-shadow: 1px 1px 3px rgb(44, 145, 140);
+}
+.kites__descr {
+	font-size: 18px;
+	text-align: center;
+	font-weight: 500;
+	color: rgb(85, 64, 10);
+	line-height: 30px;
+	text-shadow: 1px 1px 3px rgb(124, 94, 16);
+}
+.kites__features {
+}
+.features-kites {
+	text-indent: 50px;
+}
+.features-kites__title {
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 60px;
+	text-shadow: 7px 0px 4px rgb(168, 76, 177);
+	letter-spacing: 7px;
+	color: rgb(108, 60, 118);
+}
+.features-kites__item {
+}
+.features-kites__subtitle {
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: 34px;
+	text-decoration: underline;
+	color: rgb(69, 152, 132);
+}
+.features-kites__text {
+	text-transform: lowercase;
+	color: rgb(87, 134, 187);
+}
+.kites__details {
+}
+.details-kites {
+}
+.details-kites__title {
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 50px;
+	text-align: center;
+	text-shadow: -2px -2px 5px rgb(205, 184, 169), -3px -3px 5px rgb(247, 74, 208);
+	letter-spacing: 7px;
+	color: rgb(50, 62, 72);
+}
+.details-kites__text {
+	word-spacing: 15px;
+	text-align: justify;
+	text-align-last: center;
+	color: rgb(115, 122, 140);
+	text-shadow: 2px 2px 6px rgb(115, 122, 140);
+}
+.kites__tech {
+}
+.tech-kites {
+}
+.tech-kites__title {
+	font-size: 26px;
+	font-weight: 800;
+	line-height: 50px;
+	color: rgb(159, 167, 140);
+	text-shadow: 1px -1px 4px rgb(159, 167, 140);
+}
+.tech-kites__subtitle {
+	color: rgb(55, 105, 120);
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 30px;
+	text-decoration: line-through;
+}
+.tech-kites__text {
+	color: rgb(15, 50, 60);
+	text-shadow: 2px -2px 2px rgb(175, 177, 172);
+	text-transform: capitalize;
+}
+.tech-kites__image {
 	text-align: right;
 }
-.main__image {
+.kites__quotes {
+}
+.quotes-kites {
+	font-family: Mali;
+	text-align: right;
+}
+.quotes-kites__title {
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 60px;
+	color: rgb(55, 105, 120);
+	text-shadow: -3px 3px 5px rgb(180, 180, 180);
+}
+.quotes-kites__text {
+	font-weight: 200;
+	font-style: italic;
+	font-size: 16px;
+	line-height: 20px;
+	text-shadow: 1px 1px 2px rgb(220, 220, 110);
+}
+.quotes-kites__text span {
+	font-weight: 500;
+	font-style: italic;
+	text-transform: uppercase;
+	text-decoration: underline;
+	font-size: 16px;
+	color: rgb(0, 0, 255);
+}
+.quotes-kites__text > p {
+	color: rgb(60, 166, 180);
+}
+.quotes-kites__text2 {
+}
+.kites__up {
+	text-align-last: center;
+}
+/* -------------------------------------------------------------------------------------------------------------------------- */
+.duotone__twintips {
+}
+.twintips {
+}
+.twintips__image {
+}
+.twintips__title {
+	font-weight: 800;
+	font-size: 36px;
+	line-height: 70px;
 	text-align: center;
+	text-transform: uppercase;
+	color: rgb(225, 226, 56);
+	text-shadow: -3px 3px 3px rgba(40, 118, 104, 0.9);
+	text-decoration: overline;
+}
+.twintips__subtitle {
+	font-weight: 600;
+	font-size: 28px;
+	text-align: center;
+	text-transform: lowercase;
+	color: rgba(40, 118, 104, 0.9);
+	text-shadow: 2px -2px 2px rgb(225, 226, 56);
+	text-decoration: underline;
+}
+.twintips__descr {
+	font-size: 18px;
+	text-align: center;
+	font-weight: 500;
+	color: rgb(22, 58, 58);
+	line-height: 30px;
+	text-shadow: 0px 1px 3px rgb(31, 134, 136);
+}
+.twintips__features {
+}
+.features-twintips {
+}
+.features-twintips__title {
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 60px;
+	letter-spacing: 4px;
+	color: rgb(11, 66, 68);
+	text-shadow: 2px 2px 2px rgb(69, 152, 132);
+	text-indent: 30px;
+}
+.features-twintips__item {
+	font-family: Mali;
+}
+.features-twintips__subtitle {
+	font-size: 21px;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: 34px;
+	text-shadow: 1px 1px 1px rgb(227, 232, 60);
+	color: rgb(69, 152, 132);
+	text-indent: 100px;
+}
+.features-twintips__text {
+	font-size: 17px;
+	font-weight: 300;
+	text-transform: lowercase;
+	font-style: italic;
+	letter-spacing: -1px;
+	text-indent: 150px;
+}
+.twintips__details {
+}
+.details-twintips {
+}
+.details-twintips__title {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 50px;
+	text-align: right;
+	text-shadow: -2px 0px 5px rgb(150, 150, 150), -3px 0px 5px rgb(148, 41, 51);
+	letter-spacing: 7px;
+	color: rgb(16, 90, 83);
+}
+.details-twintips__text {
+	font-size: 16px;
+	word-spacing: 10px;
+	text-align: right;
+	color: rgb(148, 41, 51);
+	text-shadow: -2px 2px 6px rgb(115, 122, 140);
+}
+.twintips__tech {
+}
+.tech-twintips {
+	text-align: center;
+}
+.tech-twintips__title {
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 50px;
+	color: rgb(125, 122, 118);
+	text-shadow: 1px -1px 4px rgb(159, 167, 140);
+	text-align: center;
+}
+.article {
+	color: rgb(22, 128, 138);
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 30px;
+	text-decoration: line-through;
+	letter-spacing: normal;
+}
+.tech-twintips__text {
+	font-size: 16px;
+	color: rgb(125, 122, 118);
+	letter-spacing: 5px;
+	word-spacing: 15px;
+	text-shadow: 1px 1px 2px rgb(22, 128, 138);
+}
+.twintips__up {
+	text-align: center;
+}
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+.footer {
+}
+.footer__logo {
+}
+.footer__copyright {
+	text-align: center;
+	text-decoration: underline;
+	line-height: 30px;
 }
